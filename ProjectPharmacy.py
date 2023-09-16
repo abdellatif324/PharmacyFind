@@ -25,6 +25,43 @@ def find_Massdora():
         map.set_zoom(20)
         marker = map.set_marker(30.349991584008908, -9.539860928012011)
 
+def fin_bouzgar():
+        map = TkinterMapView(abdo,height=540,width=580)
+        map.place(x=400,y=40)
+
+        map.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga",max_zoom=22)
+        map.set_position(30.344293949565564, -9.539355363156051)
+        map.set_zoom(20)
+        map.set_marker(30.344293949565564, -9.539355363156051)
+
+def find_jerf():
+        map = TkinterMapView(abdo,height=540,width=580)
+        map.place(x=400,y=40)
+
+        map.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga",max_zoom=22)
+        map.set_position(30.346838448999478, -9.538781312238125)
+        map.set_zoom(20)
+        map.set_marker(30.346838448999478, -9.538781312238125)
+
+def find_lmowadafin():
+        map = TkinterMapView(abdo,height=540,width=580)
+        map.place(x=400,y=40)
+
+        map.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga",max_zoom=22)
+        map.set_position(30.354348046132102, -9.54216787326882)
+        map.set_zoom(20)
+        map.set_marker(30.354348046132102, -9.54216787326882)
+ 
+ 
+def find_inzegane():
+        map = TkinterMapView(abdo,height=540,width=580)
+        map.place(x=400,y=40)
+
+        map.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga",max_zoom=22)
+        map.set_zoom(20)
+        map.set_position(30.360170329533002, -9.528318866955818)
+        map.set_marker(30.360170329533002, -9.528318866955818)
+
 def cu():
         country = en.get()
         map.set_tile_server("https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}&s=Ga",max_zoom=22)
@@ -69,28 +106,28 @@ b1 = Button(abdo,text='Check Country',
         )
 b1.place(x= 240 , y = 400)
 
-#---Pharmacy butoon
+#--*----------------------Pharmacy butoon
 
-bb1 = Button(abdo , text='lmowadafin',font=(10),relief=GROOVE,width=10,cursor='hand2')
+bb1 = Button(abdo , text='الموضفين',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_lmowadafin)
 bb1.place(x=20,y=475)
 
-bb2 = Button(abdo , text='Massdora',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_Massdora)
+bb2 = Button(abdo , text='MESDOURA',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_Massdora)
 bb2.place(x=140,y=475)
 
 
-bb3 = Button(abdo , text='Bozgar',font=(10),relief=GROOVE,width=10,cursor='hand2')
+bb3 = Button(abdo , text='الجرف',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_jerf)
 bb3.place(x=260,y=475)
 
 
-bb4 = Button(abdo , text='Inzegan',font=(10),relief=GROOVE,width=10,cursor='hand2')
+bb4 = Button(abdo , text='انزكان',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_inzegane)
 bb4.place(x=20,y=520)
 
 
 
-bb5 = Button(abdo , text='saada',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_sadaa)
+bb5 = Button(abdo , text='السعادة',font=(10),relief=GROOVE,width=10,cursor='hand2',command=find_sadaa)
 bb5.place(x=140,y=520)
 
-bb6 = Button(abdo , text='Bozgar',font=(10),relief=GROOVE,width=10,cursor='hand2')
+bb6 = Button(abdo , text='بوزكار',font=(10),relief=GROOVE,width=10,cursor='hand2',command=fin_bouzgar)
 bb6.place(x=260,y=520)
 
 #-------------Map----------------
